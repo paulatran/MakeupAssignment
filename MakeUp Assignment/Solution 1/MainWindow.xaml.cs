@@ -54,7 +54,7 @@ namespace Solution_1
             var random1 = new Random();
             var result1 = StudentNames.OrderBy(item => random1.Next()).ToList();
             int numgroups = int.Parse(txtGroups.Text);
-            int group_num = 1;
+            int group_num = 0;
             for (int i = 0; i < StudentNames.Count; i++)
             {
                 lstGroups.Items.Add("Group" + group_num + ": " + result1[i]);
